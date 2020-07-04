@@ -1,3 +1,7 @@
+npm install -g phonegap
+
+npm install -g cordova
+
 cordova create MyApp
 
 cordova platform add browser
