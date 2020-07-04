@@ -1,0 +1,156 @@
+/*
+
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+* {
+    transition: all 1s;
+}
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(7fonts.ru_DS-DIGI.TTF); /* Путь к файлу со шрифтом */
+}
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #456b0a;
+    color: #e4cb01;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+
+
+.app {
+    width:100%;
+}
+.deviceready {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    opacity: 1;
+    filter: alpha(opacity=10);
+    display:inline-block;
+    font-size:1.2rem;
+    text-align: center;
+}
+.header1 {
+    position:  fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    margin-top: 5px;
+    display : block;
+    text-align:right;
+}
+.header2 {
+    position:  fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    margin-top: 5px;
+    display : none;
+    text-align:right;
+}
+.text {
+    width:100%;
+}
+
+.vmodul {
+
+}
+.vmodul.open .modul-overlay ,
+.vmodul.open .modul-windows {
+    opacity: 1;
+    z-index: 1000;
+}
+.vmodul.hide .modul-overlay ,
+.vmodul.hide .modul-windows {
+    opacity: 1;
+    z-index: 1000;
+}
+.vmodul.open .modul-windows {
+    transform: translateY(20px);
+}
+.vmodul.open .modul-overlay {
+    background: rgba(0,0,0, .5);
+}
+.vmodul.hide .modul-windows {
+    transform: translateY(-200px);
+}
+.vmodul.hide .modul-overlay {
+    background: rgba(0,0,0, 0);
+}
+.modul-windows, .modul-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+.modul-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    transition: background .5s ease-in;
+
+}
+.modul-windows {
+    height:auto;
+    border-radius: 5px;
+    background: #0c6b66;
+    margin: 0px auto;
+    transform: translateY(-200px);
+    transition: transform .3s ease-in;
+}
+.modul-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #260dd3;
+}
+.modul-title {
+    font-size: 1.5rem;
+}
+.modul-close {
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+.modul-body {
+    padding: 5px;
+    text-align:center;
+}
+.modul-footer {
+    padding: 5px 10px;
+    border-top: 1px solid #260dd3;
+}
+
+
+.t_model{
+
+    border-top:#fab548 5px solid;
+
+    opacity: 0.9;
+    filter: alpha(opacity=10);
+
+    padding:3px 3px 3px ;
+
+    text-align: center;
+    min-height:10px;
+    border-radius:13px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+    font-size: 1.5rem;
+}
+.text{
+    text-align:right;
+}
