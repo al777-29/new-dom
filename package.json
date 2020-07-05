@@ -5,7 +5,7 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "serve": "phonegap serve",
+    "serve": "phonegap serve --browser",
     "build": "cordova build",
     "browser": "cordova run browser"
   },
