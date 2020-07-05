@@ -8,7 +8,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <platform name="electron">
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="AndroidExtraFilesystems" value="files,cache, sdcard, cache-external, files-external" />
